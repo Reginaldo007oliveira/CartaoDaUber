@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smothing: antialiased;
+    -moz-osx-font-smothing: grayscale;
+}
+
+:root {
+    font-family: inter;
+    font-weight: 500;
+}
+
+body {
+    background-color: #121214;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.card {
+    flex-direction: column;
+    gap: 96px;
+    padding: 24px 56px;
+    border-radius: 40px;
+    background-color: white;
+    max-width: 900px;
+}
+.card-drag {
+    width: 168px;
+    height: 18px;
+    background-color: #e5d8ea;
+    margin: auto;
+    border-radius: 999px; /*Phill*/
+}
+
+/*Card Header*/
+.card-header h1{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    
+    color: #372D3B;
+}
+.card-header h1 span{
+    color: #864293;  
+}
+.card-header  p{
+    font-size: 25px;
+    line-height: 30px;
+    color: #372D3B;
+  
+}
+
+/* Card body */
+.card-body {
+    justify-content: space-between;
+    align-items: center;
+}
+.card-body .left {
+    align-items: center;
+}
+
+/*Driver*/
+.driver {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+}
+
+
+.driver-avatar img {
+    width: 138px;
+    height: 138px; 
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.driver-stars {
+    align-items: center;
+    justify-content: center;
+    color: #FBF8fc;
+    background: #372d3b;
+    width: 100px;
+    height: 32px;
+    border-radius: 999px;
+    padding: 8px 22px;
+    gap: 10px;
+    /* width: fit-content; */
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;   
+    margin-top: -32px;
+}
+.driver-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #372b3d;
+    margin-top: 6px;
+}
+/* .star {
+  font-size: 12px;
+  color: yellow;
+} */
+
+.car-img {
+    margin-left: -50px;
+}
+.car-plate {
+    font-weight: 700;
+    font-size: 41.0955px;
+    line-height: 50px;
+    color: #372D3B;
+}
+
+.car-model {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 30px;
+    color: #372D3B;
+}
+.card-footer {
+    align-items: center;
+    gap: 32px;
+}
+
+.input-wrapper  {
+    align-items: center;
+    flex: 3;
+    background-color:#F5EDF7;
+    border-radius: 24px;
+    height: 64px;
+    padding:  0 32px;
+
+}
+
+/* Classe utilitaria */
+.input-wrapper label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    border-width: 0;
+    white-space: nowrap;
+}
+.input-wrapper input {
+    width: 100%;
+    border: 0;
+    background-color: transparent;   
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #372D3B;
+}
+
+.input-wrapper input:focus {
+    outline: 0;
+}
+.input-wrapper:focus-within {
+    outline: 3px solid rgb(182, 4, 236);
+}
+
+.card-footer .ph-fill {
+    font-size: 55px;
+
+}
+
+/* .card-footer .ph-shield-plus {
+    font-size: 155px;
+    color: red;
+} */
+/* .card-footer .ph-phone {
+    font-size: 100px;
+    color: rgb(17, 128, 32);
+} */
+
+
+
+
+.right {
+    margin-left: 100px;
+}
